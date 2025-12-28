@@ -25,15 +25,15 @@ from rasterio.enums import Resampling
 
 # User Inputs
 
-country_boundary = r"E:\VUB\Final\Boundaries\EU_Country_New.shp"  # Provide the path to boundary shapefile
+country_boundary = r"EU_Country_New.shp"  # Provide the path to boundary shapefile
 
 folders = [                                                       # Provide folder path to raster files
-    r"E:\VUB\Final\AET",
-    r"E:\VUB\Final\LULC",
-    r"E:\VUB\Final\Precipitation",
-    r"E:\VUB\Final\RootZoneSoilMoisture",
-    r"E:\VUB\Final\Soil",
-    r"E:\VUB\Final\Temperature_Mean"
+    r"AET",
+    r"LULC",
+    r"Precipitation",
+    r"RootZoneSoilMoisture",
+    r"Soil",
+    r"Temperature_Mean"
 ]
 
 SUFFIX = "_clipped"
@@ -197,3 +197,4 @@ for folder in folders:
         print(f"Clipped -> {out_raster}")
 
 print("\nAll specified folders processed successfully.")
+
