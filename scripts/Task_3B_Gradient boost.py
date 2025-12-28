@@ -44,10 +44,10 @@ from sklearn.ensemble import HistGradientBoostingClassifier
 
 
 # -------------------- USER INPUTS --------------------
-DATASET = r"E:\VUB\Final\PixelDataFrames\mar_binary_dataset_all_years.csv"
-REF_RASTER = r"E:\VUB\Final\AET_Clipped\AET_2014_clipped.tif"
+DATASET = r"PixelDataFrames\mar_binary_dataset_all_years.csv"
+REF_RASTER = r"AET_Clipped\AET_2014_clipped.tif"
 
-OUT_DIR = r"E:\VUB\Final\PixelDataFrames\GB_MAR_Outputs_COMMON"
+OUT_DIR = r"PixelDataFrames\GB_MAR_Outputs_COMMON"
 os.makedirs(OUT_DIR, exist_ok=True)
 OUT_RASTER_DIR = os.path.join(OUT_DIR, "rasters")
 os.makedirs(OUT_RASTER_DIR, exist_ok=True)
@@ -384,3 +384,4 @@ for y in years:
     print(f"Saved rasters for {y}: {os.path.basename(prob_tif)} , {os.path.basename(cls_tif)}")
 
 print("\nDONE. All outputs saved in:", OUT_DIR)
+
