@@ -22,16 +22,16 @@ from rasterio.warp import reproject, Resampling
 # User inputs
 
 folders = {
-    "AET":  r"E:\VUB\Final\AET_Clipped",
-    "LULC": r"E:\VUB\Final\LULC_Clipped",
-    "P":    r"E:\VUB\Final\Precipitation_Clipped",
-    "RZSM": r"E:\VUB\Final\RootZoneSoilMoisture_Clipped",
-    "TEMP": r"E:\VUB\Final\Temperature_Mean_Clipped",
+    "AET":  r"AET_Clipped",
+    "LULC": r"LULC_Clipped",
+    "P":    r"Precipitation_Clipped",
+    "RZSM": r"RootZoneSoilMoisture_Clipped",
+    "TEMP": r"Temperature_Mean_Clipped",
 }
-SOIL_FILE = r"E:\VUB\Final\Soil_Clipped\Soil_HSG_10km_clipped.tif"   # constant soil raster
+SOIL_FILE = r"Soil_HSG_10km_clipped.tif"   # constant soil raster
 
-YEARS = range(2014, 2024)                                           # Adjust range based on data availability
-OUT_CSV = r"E:\VUB\Final\PixelDataFrames\pixels_2014_2024_all_inside.csv" # You may change the output location
+YEARS = range(2014, 2025)                                           # Adjust range based on data availability
+OUT_CSV = r"PixelDataFrames\pixels_2014_2024_all_inside.csv" # You may change the output location
 
 # categorical layers
 CATEGORICAL = {"LULC", "SOIL"}
@@ -188,3 +188,4 @@ soil_ds.close()
 
 print("\nDONE.")
 print("Saved (inside polygon only):", OUT_CSV)
+
