@@ -22,20 +22,19 @@ import rasterio
 
 # User Inputs
 
-
 # Existing pixel table (from Task 2A_Pixel_Values)
-PIXEL_CSV = r"E:\VUB\Final\PixelDataFrames\pixels_2014_2024_all_inside.csv"
+PIXEL_CSV = r"PixelDataFrames\pixels_2014_2024_all_inside.csv"
 
 # Managed Aquifer Recharge (MAR) shapefile 
-MAR_SHP   = r"E:\VUB\Final\Boundaries\MAR_EU.shp"            # Already clipped to study area
-MAR_FIELD = "main_mar_t"                                     # field containing MAR type/category in attribute table
+MAR_SHP   = r"MAR_EU.shp"            # Already clipped to study area
+MAR_FIELD = "main_mar_t"             # field containing MAR type/category in attribute table
 
 # Reference raster for point → pixel_id conversion
-REF_RASTER = r"E:\VUB\Final\AET_Clipped\AET_2014_clipped.tif"
+REF_RASTER = r"AET_Clipped\AET_2014_clipped.tif"
 
 # Outputs
-OUT_MAR_SAMPLES = r"E:\VUB\Final\PixelDataFrames\mar_samples_pixels.csv"   # You may change the path to save output
-OUT_BINARY_CSV  = r"E:\VUB\Final\PixelDataFrames\mar_binary_dataset_all_years.csv"  #You may change the path to save output
+OUT_MAR_SAMPLES = r"PixelDataFrames\mar_samples_pixels.csv"   # You may change the path to save output
+OUT_BINARY_CSV  = r"PixelDataFrames\mar_binary_dataset_all_years.csv"  #You may change the path to save output
 
 # User inputs ends here
 
@@ -192,3 +191,4 @@ def create_binary_dataset():
 if __name__ == "__main__":
     sample_mar_points_to_pixels()
     create_binary_dataset()
+
