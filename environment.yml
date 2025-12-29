@@ -1,0 +1,27 @@
+name: mar_suitability_ml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  # Core scientific stack (pin numpy <2 to avoid binary-compat issues you saw)
+  - numpy<2
+  - pandas>=1.4
+  - bottleneck>=1.3.6
+  - matplotlib>=3.5
+  # Geo stack (use conda-forge for compiled libs)
+  - geopandas>=0.12
+  - rasterio>=1.3
+  - shapely>=1.8
+  - pyproj>=3.4
+  - fiona>=1.9
+  # ML
+  - scikit-learn>=1.4
+  # Notebook runtime
+  - jupyterlab>=4
+  - ipykernel
+  # Helpful extras
+  - tqdm
+  - pip
+  - pip:
+      # If you later need extra pip-only libs, add them here
+      - openpyxl
