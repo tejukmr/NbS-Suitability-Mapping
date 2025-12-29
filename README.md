@@ -13,6 +13,7 @@ A) Data downloading: Elias Zgheib, Ndra Malky, Rashmi Krishnamurthy and Teju Kum
 
 B) Python scripts:
 Task-1, Task- 2A & 2B: Elias Zgheib, Ndra Malky, Rashmi Krishnamurthy and Teju Kumar Nagaraju
+
 Task-3A & 3B: Elias Zgheib and Teju Kumar Nagaraju
 
 C) Report: Elias Zgheib, Ndra Malky, Rashmi Krishnamurthy and Teju Kumar Nagaraju
